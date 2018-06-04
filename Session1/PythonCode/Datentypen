@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Jun  3 16:22:29 2018
+
+@author: f095
+"""
+
+#asdasd
+x=10
+
+def main_func():
+    global x
+    x=5
+    print(x)
+    
+main_func()
+
+print(x)
+
+
+class Service():
+    def __init__(self):
+        self.data = []
+    def addto(self,x):
+        self.data.append(x)
+        
+        
+a = Service()
+
+a.addto(5)
+
+a.addto(19)
+
+
+import numpy as np
+
+a = np.array([[1,5,23],[5,2,19]])
+a
+
+x = np.array([(10000,2.,'Hello'), (2,3.,"World")],dtype=[('foo', 'i4'),('bar', 'f4'), ('baz', 'S10')])
+
