@@ -19,7 +19,7 @@ string = 'Hello World'
 
 string2 = "Hello World"
 
-string3 = 'I'm a programmer' #Das ist falsch
+#string3 = 'I'm a programmer' #Das ist falsch
 
 string4 = 'I\'m a programmer'
 
