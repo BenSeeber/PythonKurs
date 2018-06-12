@@ -51,7 +51,7 @@ anfang = str.find(eMail,'@')
 eMail[anfang+1:ende]
 
 #Ist .com in der Mailadresse?
-str.find(eMail,'.de') != -1
+str.find(eMail,'eprimo') != -1
 
 1 == 1
 
@@ -66,6 +66,13 @@ eMailList[0:2]
 
 #Eintrag Hinzufügen
 eMailList.append('zweiteMail@test.de')
+
+for eMailAdresse in eMailList:
+    #Setzte string zusammen
+    Ausgabe = 'Die Mail Adresse ist ' + eMailAdresse
+    #Gib den String aus
+    print(Ausgabe)
+
 
 for i in eMailList:
     if str.find(i,'eprimo') != -1:
@@ -84,7 +91,7 @@ Liste2 = ["A","B","C"]
 Liste3 = [Liste1,Liste2]
 
 #Abfragen von einzelnen Werten
-Liste3[1][2]
+Liste3[1][1]
 
 
 #Nutzung von Arrays
