@@ -9,7 +9,8 @@ Created on Tue Jun 12 10:06:29 2018
 county_name = "CLAY COUNTY"
  
 #Filtere das erste Wort 
- Variante 1: mit dem Index
+
+#Variante 1: mit dem Index
 count_part = county_name[0:4]
 print(count_part) 
 
