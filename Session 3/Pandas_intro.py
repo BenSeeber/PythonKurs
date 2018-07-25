@@ -9,7 +9,7 @@ Created on Tue Jun 12 08:03:49 2018
 import pandas as pd
 
 #Read csv file
-df = pd.read_csv("/Users/f095/FIVE1 GmbH & Co. KG/Analytics - Customer/EPRIMO_SCHULUNG/PYTHON_2/FL_insurance_sample.csv")
+df = pd.read_csv("/Users/f095/OneDrive - FIVE1 GmbH & Co. KG/Code/PythonKurs/Session 2/FL_insurance_sample.csv")
 
 #Get columns
 df.columns
@@ -26,16 +26,22 @@ df[['point_longitude','statecode']]
 
 #get unique values
 county = df.county.unique()
+print(county)
+
 #group data
 df.groupby(['county'])['point_longitude'].mean()
 
-#filtern
+#filtern nach Wert
 
-df[["county","point_longitude"]].loc[df.county=='CLAY COUNTY']
+df[df.county=='CLAY COUNTY'][["county","point_longitude"]]
+
+
+#filtern nach ersten Buchstaben einer Spalte
+df[df.county.str.slice(0,1)=='L'][["county","point_longitude"]]
 
 #filter nach liste
 some_values=('SUWANNEE COUNTY','NASSAU COUNTY')
-df[["county","point_longitude"]].loc[df.county.isin(some_values)]
+df[df.county.isin(some_values)][["county","point_longitude"]]
 
 #und die negation mit einer Tilde ~
-df[["county","point_longitude"]].loc[~df.county.isin(some_values)]
+df[~df.county.isin(some_values)][["county","point_longitude"]]

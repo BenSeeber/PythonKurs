@@ -16,7 +16,7 @@ pyodbc.drivers()
 #Stelle Verbindung her
 cnxn = pyodbc.connect(
     r'DRIVER={FreeTDS};'
-    r'SERVER=192.168.56.1,32774;'
+    r'SERVER=127.0.0.1,32774;'
     r'DATABASE=master;'
     r'UID=sa;'
     r'PWD=Pa$$w0rd'
