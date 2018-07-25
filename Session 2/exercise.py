@@ -46,8 +46,8 @@ county = ['CLAY COUNTY', 'SUWANNEE COUNTY', 'NASSAU COUNTY',
        'DESOTO COUNTY', 'CITRUS COUNTY']
 
 #Nutze eine FOR Schleife um die Elemente der Liste auszugeben
-for i in county:
-    print(i)
+for county_name in county:
+    print(county_name)
 
 #Nutze die Split Funktion um das erste Wort 
 #der County Strings auszugeben

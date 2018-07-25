@@ -44,4 +44,13 @@ while i<=10: #Die Bedingung für die Schleife ist, das die Variable kleiner oder
     #Aufgabe von i
     print(i)
     #hinzuzählen von 1 zur Zahl mit der Referenz i
-    i+=1
+    i = i+1
+    
+    
+Date=[1,31,2,3,4,5,6,7]
+Kuendigungen=[50,10,60,29,48,59,17]
+
+i = 0
+while Date[i] <= 3:
+    print(Kuendigungen[i])
+    i=i+1
