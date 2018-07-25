@@ -1,0 +1,1 @@
+Für die Nutzung der MSSQL Verbindung wird PyODBC benötigt. Wie dies eingerichtet werden kann, ist hier: https://docs.microsoft.com/de-de/sql/connect/python/pyodbc/step-1-configure-development-environment-for-pyodbc-python-development?view=sql-server-2017 beschreiben.
