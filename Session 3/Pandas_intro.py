@@ -18,6 +18,7 @@ df.columns
 #get different datatypes in table
 df.dtypes
 
+#get first line of dataframe
 df.iloc[0]
 
 #get one column
