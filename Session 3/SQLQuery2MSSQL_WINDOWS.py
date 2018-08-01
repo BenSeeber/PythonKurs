@@ -24,7 +24,7 @@ cnxn = pyodbc.connect(
 
 #Mache Abfrage
 sql = "Select * From dbo.MSreplication_options"
-data = pandas.read_sql(sql,cnxn)
+otto = pandas.read_sql(sql,cnxn)
 
 #Bekomme die erste Spalte
-data.optname
+otto.dtypes
